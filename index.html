@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>白戸 朗 ｜ WEB制作ポートフォリオ</title>
+
+<!-- ===== SEO ===== -->
+<meta name="description" content="お客様の思いを分かりやすく、丁寧に表現するサイトを作ります。LP制作・コーディング（HTML/CSS/JS）・Google Apps Script連携・Instagram Reelsのディレクション。神奈川県平塚市の白戸朗のポートフォリオ。">
+<meta name="keywords" content="WEB制作,LP制作,ホームページ制作,コーディング,HTML,CSS,JavaScript,Google Apps Script,Instagram Reels,神奈川,平塚,ポートフォリオ,白戸朗">
+<meta name="author" content="白戸 朗（Shirato Akira）">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#5bb8e8">
+<!-- TODO: 公開URLが決まったら canonical / og:url / twitter:image を実URLに差し替えてください -->
+<link rel="canonical" href="https://akira-daddy.github.io/portfolio/">
+
+<!-- ===== OGP ===== -->
+<meta property="og:title" content="白戸 朗 ｜ WEB制作ポートフォリオ">
+<meta property="og:description" content="お客様の思いを分かりやすく、丁寧に表現するサイトを作ります。LP制作・コーディング・Google Apps Script連携・Instagram Reelsのディレクションまで、ひとつづきで形にします。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://akira-daddy.github.io/portfolio/">
+<meta property="og:site_name" content="白戸 朗 ｜ WEB制作ポートフォリオ">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://akira-daddy.github.io/portfolio/assets/ogp-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="白戸 朗 ｜ WEB制作ポートフォリオ">
+
+<!-- ===== Twitter Card ===== -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="白戸 朗 ｜ WEB制作ポートフォリオ">
+<meta name="twitter:description" content="お客様の思いを分かりやすく、丁寧に表現するサイトを作ります。">
+<meta name="twitter:image" content="https://akira-daddy.github.io/portfolio/assets/ogp-image.png">
+
+<!-- ===== Favicon ===== -->
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/favicon/favicon-48x48.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Roboto+Mono:wght@400;500&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-state="home">
+
+<!-- ===== 背景（ブループリント格子＋にじみ） ===== -->
+<div class="backdrop" aria-hidden="true">
+  <div class="backdrop__grid"></div>
+  <div class="backdrop__glow backdrop__glow--a"></div>
+  <div class="backdrop__glow backdrop__glow--b"></div>
+</div>
+
+<!-- ===== ヘッダー ===== -->
+<header class="topbar">
+  <button class="brand" type="button" data-go="home" aria-label="トップに戻る">
+    <span class="brand__mark" aria-hidden="true"></span>
+    <span class="brand__text">
+      <b>白戸 朗 SHIRATO, AKIRA</b>
+      <i>Web Director / UI Designer</i>
+    </span>
+  </button>
+  <nav class="topnav" aria-label="メインメニュー">
+    <button type="button" data-go="about">ABOUT</button>
+    <button type="button" data-go="works">WORKS</button>
+    <button type="button" data-go="contact">CONTACT</button>
+  </nav>
+</header>
+
+<!-- ===== 3Dステージ ===== -->
+<main class="stage" id="stage">
+  <div class="deck" id="deck">
+
+    <!-- --- ①ファーストビュー --- -->
+    <section class="view view--home" data-view="home" aria-label="トップ">
+      <div class="hero">
+        <div class="hero__copy layer" style="--z:70px">
+          <p class="eyebrow">PORTFOLIO — 2026</p>
+          <h1 class="hero__title">
+            お客様の思いを、<br>
+            <span class="hl">分かりやすく</span>、丁寧に。<br>
+            <span class="thin">表現するサイトを作ります。</span>
+          </h1>
+          <p class="hero__lead">
+            AIを活用して、企画・画像制作・動画制作・コーディングまで制作スピードを高めます。
+            WEBサイトのデザイン・コーディング（HTML / CSS / JS）からInstagram Reelsのディレクションまで、
+            ひとつづきで形にします。
+          </p>
+        </div>
+
+        <div class="hero__photo layer" style="--z:110px">
+          <div class="photo-frame">
+            <img src="assets/Self_image.webp" alt="白戸 朗">
+            <span class="photo-frame__tag">Shirato, Akira</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-wrap layer" style="--z:160px">
+        <button class="cta" type="button" data-go="menu" aria-label="メニューを開く">
+          <span class="cta__ring"></span>
+          <span class="cta__core">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h6v6H4zM14 7h6v6h-6zM9 17h6v4H9z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            <b>MENU</b>
+          </span>
+        </button>
+        <p class="cta-hint">Click</p>
+      </div>
+    </section>
+
+    <!-- --- ②メニュー（ABOUT / WORKS / CONTACT） --- -->
+    <section class="view view--menu" data-view="menu" aria-label="メニュー">
+      <svg class="wires" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M50 0 C50 24, 16 26, 16 46" />
+        <path d="M50 0 C50 26, 50 28, 50 46" />
+        <path d="M50 0 C50 24, 84 26, 84 46" />
+      </svg>
+      <span class="hub" aria-hidden="true"></span>
+
+      <div class="menu-grid">
+        <button class="panel panel--menu layer" style="--z:120px" type="button" data-go="about">
+          <span class="panel__idx">01</span>
+          <span class="panel__en">ABOUT</span>
+          <span class="panel__jp">わたしについて</span>
+          <span class="panel__desc">経歴とできること</span>
+          <span class="panel__arrow" aria-hidden="true">→</span>
+          <img class="panel__char" src="assets/ABOUT_SD_image.png" alt="" aria-hidden="true" loading="lazy">
+        </button>
+        <button class="panel panel--menu layer" style="--z:150px" type="button" data-go="works">
+          <span class="panel__idx">02</span>
+          <span class="panel__en">WORKS</span>
+          <span class="panel__jp">制作実績</span>
+          <span class="panel__desc">LP・Reels連動サイト 5件</span>
+          <span class="panel__arrow" aria-hidden="true">→</span>
+          <img class="panel__char" src="assets/WORKS_SD_image.png" alt="" aria-hidden="true" loading="lazy">
+        </button>
+        <button class="panel panel--menu layer" style="--z:120px" type="button" data-go="contact">
+          <span class="panel__idx">03</span>
+          <span class="panel__en">CONTACT</span>
+          <span class="panel__jp">ご相談・お見積り</span>
+          <span class="panel__desc">まずは気軽にどうぞ</span>
+          <span class="panel__arrow" aria-hidden="true">→</span>
+          <img class="panel__char" src="assets/CONTACT_SD_image.png" alt="" aria-hidden="true" loading="lazy">
+        </button>
+      </div>
+      <p class="menu-note layer" style="--z:60px">Escキー / 戻るボタンで一つ前に戻れます</p>
+    </section>
+
+    <!-- --- ③ABOUT --- -->
+    <section class="view view--about" data-view="about" aria-label="ABOUT">
+      <div class="sheet layer" style="--z:45px">
+        <button class="back" type="button" data-back>← 戻る</button>
+        <p class="eyebrow">01 — ABOUT</p>
+
+        <div class="about">
+          <div class="about__portrait">
+            <img src="assets/Self_image.webp" alt="白戸 朗">
+          </div>
+          <div class="about__body">
+            <h2 class="sheet__title">白戸 朗 <small>Shirato Akira</small></h2>
+            <p class="about__lead">
+              「言いたいことは決まっているのに、うまく形にならない」。
+              その間をつなぐのが私の仕事です。ヒアリングした内容を構成に落とし、
+              デザインとコードまで一人で仕上げます。
+            </p>
+
+            <dl class="specs">
+              <div><dt>拠点</dt><dd>神奈川県川崎市</dd></div>
+              <div><dt>制作スタイル</dt><dd>01ヒアリング➡02構成➡03デザイン➡04実装</dd></div>
+              <div><dt>対応領域</dt><dd>企画構成 / デザイン / 実装 / 撮影・動画</dd></div>
+              <!--
+              <div><dt>お取引先</dt><dd>企業・スーパー・教育機関・個人商店・町内会</dd></div>
+              -->
+            </dl>
+
+            <h3 class="mini-head">できること</h3>
+            <ul class="skills">
+              <li><b>LP・Webサイト制作</b><span>構成づくりからデザイン、実装まで</span></li>
+              <li><b>コーディング</b><span>HTML / CSS / JavaScript</span></li>
+              <li><b>フォーム構築</b><span>Google Apps Script連携・自動返信メール</span></li>
+              <li><b>Instagram Reels</b><span>絵コンテ設計・AI生成・編集ディレクション</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="sheet__foot">
+          <button class="btn btn--primary" type="button" data-go="works">実績を見る</button>
+          <button class="btn" type="button" data-go="contact">相談してみる</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- ④WORKS --- -->
+    <section class="view view--works" data-view="works" aria-label="WORKS">
+      <div class="works-head layer" style="--z:60px">
+        <button class="back" type="button" data-back>← 戻る</button>
+        <p class="eyebrow">02 — WORKS</p>
+        <h2 class="works-title">作品について。</h2>
+      </div>
+
+      <div class="works-orbit layer" style="--z:20px" id="worksOrbit">
+        <span class="orbit-anchor" id="orbitAnchor" aria-hidden="true"></span>
+        <div class="orbit-hub" aria-hidden="true">
+          <span class="orbit-hub__word">WORKS</span>
+          <span class="orbit-hub__sub">5 PROJECTS</span>
+        </div>
+        <svg class="orbit-wires" id="orbitWires" aria-hidden="true"></svg>
+        <div class="orbit-ring" id="worksRing">
+          <!-- JSで生成 -->
+        </div>
+      </div>
+      <p class="works-note layer" style="--z:40px">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3"/></svg>
+        ドラッグで回転。カードを選ぶと実際のLPが別ウィンドウで開きます。
+      </p>
+    </section>
+
+    <!-- --- ⑤CONTACT --- -->
+    <section class="view view--contact" data-view="contact" aria-label="CONTACT">
+      <div class="sheet sheet--form layer" style="--z:45px">
+        <button class="back" type="button" data-back>← 戻る</button>
+        <p class="eyebrow">03 — CONTACT</p>
+        <h2 class="sheet__title">制作のご依頼・ご相談</h2>
+        <p class="form__lead">
+          「こんなことできますか？」の段階で大丈夫です。2営業日以内にご返信します。
+        </p>
+
+        <form class="form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="company">貴社名 <span class="opt">任意</span></label>
+            <input type="text" id="company" name="company" autocomplete="organization" placeholder="〇〇商店会">
+          </div>
+          <div class="field">
+            <label for="name">お名前 <span class="req">必須</span></label>
+            <input type="text" id="name" name="name" required autocomplete="name" placeholder="山田 太郎">
+            <p class="err" data-err-for="name"></p>
+          </div>
+          <div class="field">
+            <label for="email">メールアドレス <span class="req">必須</span></label>
+            <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@example.com">
+            <p class="err" data-err-for="email"></p>
+          </div>
+          <div class="field">
+            <label for="tel">電話番号 <span class="opt">任意</span></label>
+            <input type="tel" id="tel" name="tel" autocomplete="tel" placeholder="0463-00-0000">
+          </div>
+          <div class="field field--full">
+            <label for="message">お問い合わせ内容 <span class="req">必須</span></label>
+            <textarea id="message" name="message" rows="4" required placeholder="夏祭りの告知ページを作りたいです。開催は8月で、写真は用意できます。"></textarea>
+            <p class="err" data-err-for="message"></p>
+          </div>
+          <div class="field field--full form__submit">
+            <button class="btn btn--primary btn--lg" type="submit">送信する</button>
+            <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<!-- ===== フッター ===== -->
+<footer class="footbar">
+  <p>© 2026 Shirato Akira</p>
+  <p class="footbar__hint">動かすとパネルが傾きます</p>
+</footer>
+
+<!-- ===== Reels動画モーダル ===== -->
+<div class="reels-modal" id="reelsModal" aria-hidden="true">
+  <div class="reels-modal__backdrop" data-reels-close></div>
+  <div class="reels-modal__panel">
+    <button class="reels-modal__close" type="button" data-reels-close aria-label="閉じる">✕</button>
+    <video class="reels-modal__video" id="reelsVideo" playsinline controls></video>
+    <p class="reels-modal__title" id="reelsModalTitle"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
